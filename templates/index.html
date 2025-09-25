@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>每日AI新闻摘要</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>每日 AI 新闻摘要</h1>
+      <p>数据来源：<a href="https://news.smol.ai/rss.xml" target="_blank" rel="noopener">smol.ai News</a></p>
+    </header>
+
+    <main>
+      {% if articles %}
+      <section class="articles">
+        {% for article in articles %}
+        <article class="article-card">
+          <h2><a href="{{ article.link }}" target="_blank" rel="noopener">{{ article.title }}</a></h2>
+          {% if article.published_at %}
+          <p class="meta">发布时间：{{ article.published_at }}</p>
+          {% endif %}
+          {% if article.translated_summary %}
+          <p class="summary">{{ article.translated_summary }}</p>
+          {% elif article.original_summary %}
+          <p class="summary original">原文摘要：{{ article.original_summary }}</p>
+          {% else %}
+          <p class="summary empty">暂无摘要</p>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </section>
+      {% else %}
+      <p class="empty-state">数据库中暂时没有新闻，请先运行采集脚本。</p>
+      {% endif %}
+    </main>
+
+    <footer class="page-footer">
+      <p>可使用 <code>python -m backend.collector</code> 按日更新数据。</p>
+    </footer>
+  </body>
+</html>
