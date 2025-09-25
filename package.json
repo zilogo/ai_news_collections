@@ -1,0 +1,15 @@
+{
+  "name": "ai_news_collections",
+  "version": "1.0.0",
+  "description": "ai_news_collections",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"No automated tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

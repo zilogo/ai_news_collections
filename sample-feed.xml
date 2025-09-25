@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Sample smol.ai Feed</title>
+    <link>https://news.smol.ai</link>
+    <description>A tiny offline-friendly excerpt of the smol.ai news feed.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Building lightweight AI news dashboards</title>
+      <link>https://news.smol.ai/posts/lightweight-ai-dashboards</link>
+      <guid isPermaLink="true">https://news.smol.ai/posts/lightweight-ai-dashboards</guid>
+      <pubDate>Tue, 31 Dec 2024 18:00:00 +0000</pubDate>
+      <dc:creator>smol contributors</dc:creator>
+      <category>Design</category>
+      <category>AI</category>
+      <description><![CDATA[We explored how minimal tooling can still deliver a delightful, bilingual news reader powered by large language models.]]></description>
+      <content:encoded><![CDATA[
+        <p>The smol.ai community has been experimenting with micro dashboards that deliver just the right amount of context for AI-curated news.</p>
+        <p>By combining RSS, server-side caching, and modern CSS techniques, builders can ship fast without heavyweight frameworks.</p>
+      ]]></content:encoded>
+    </item>
+    <item>
+      <title>Prompt engineering tips from the community</title>
+      <link>https://news.smol.ai/posts/prompt-engineering-tips</link>
+      <guid isPermaLink="true">https://news.smol.ai/posts/prompt-engineering-tips</guid>
+      <pubDate>Mon, 30 Dec 2024 12:30:00 +0000</pubDate>
+      <dc:creator>Jane Doe</dc:creator>
+      <category>Prompts</category>
+      <description><![CDATA[A curated list of practical prompt engineering tricks gathered from builders in the smol.ai Discord.]]></description>
+      <content:encoded><![CDATA[
+        <p>The community shared examples of prompts that improve summarisation fidelity, multilingual output, and structured JSON responses.</p>
+        <p>These lessons informed the bilingual summary agent used in this demo.</p>
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>
